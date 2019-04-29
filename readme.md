@@ -1,8 +1,8 @@
 # docker-puppeteer-sample
-sample code of puppeteer on docker
+Sample code of puppeteer on docker.
 
 ## environment
-everywhere only if docker is enabled.
+Everywhere only if docker is enabled.
 
 ## exec
 ### using docker only
@@ -13,14 +13,14 @@ docker run -i --init --rm --cap-add=SYS_ADMIN \
 ```
 
 ### using docker-compose
-1. change the `/path/to` path to your real path
+1. Change the `/path/to` to real path in `docker-compose.yml` .
 
-2. exec below
+2. Exec below.
 ```
 docker-compose run --rm --entrypoint /bin/sh puppeteer
 ```
 
-3. in docker process, exec below
+3. In docker process, exec below.
 ```
 node main.js
 ```
